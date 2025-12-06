@@ -2,6 +2,7 @@
 
 import React, { useState, FormEvent } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const WAITLIST_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbxPvj34_yEAanpE3wuLT2b1u45tmgSAd-SjR1XGY7ypHZ443V1DbM6DnBwhG5g_ZHMEkQ/exec";
@@ -96,19 +97,22 @@ export default function Home() {
             <span className="text-2xl font-bold text-[#2e92fe]">AbleLearn</span>
 
             <div className="hidden md:flex space-x-8 text-sm font-medium">
-              <a href="#engines" className="hover:text-[#2e92fe]">
-                Features
-              </a>
-              <a href="#how" className="hover:text-[#2e92fe]">
-                How it works
-              </a>
-              <a href="#teachers" className="hover:text-[#2e92fe]">
-                For teachers
-              </a>
-              <a href="#faq" className="hover:text-[#2e92fe]">
-                FAQ
-              </a>
-            </div>
+  <a href="#engines" className="hover:text-[#2e92fe]">
+    Features
+  </a>
+  <a href="#how" className="hover:text-[#2e92fe]">
+    How it works
+  </a>
+  <a href="#teachers" className="hover:text-[#2e92fe]">
+    For teachers
+  </a>
+  <a href="#faq" className="hover:text-[#2e92fe]">
+    FAQ
+  </a>
+  <Link href="/about" className="hover:text-[#2e92fe]">
+    Why I Built AbleLearn
+  </Link>
+</div>
 
             <div className="hidden md:block">
               <PrimaryButton onClick={scrollToWaitlist} className="py-2 px-6 text-sm">
