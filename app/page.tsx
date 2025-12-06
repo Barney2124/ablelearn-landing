@@ -391,7 +391,7 @@ export default function Home() {
               disabled={status === "loading"}
               className="w-full sm:w-auto mt-1 sm:mt-0"
             >
-              {status === "loading" ? "Adding..." : "Join waitng list"}
+              {status === "loading" ? "Adding..." : "Join waiting list"}
             </PrimaryButton>
           </form>
 
