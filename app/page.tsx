@@ -84,7 +84,7 @@ export default function Home() {
   };
 
   const scrollToWaitlist = () => {
-    const el = document.getElementById("waitlist");
+    const el = document.getElementById("waiting list");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -116,7 +116,7 @@ export default function Home() {
 
             <div className="hidden md:block">
               <PrimaryButton onClick={scrollToWaitlist} className="py-2 px-6 text-sm">
-                Join waitlist
+                Join waiting list
               </PrimaryButton>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function Home() {
 
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
             Master what matters.{" "}
-            <span className="text-[#2e92fe]">Lose the busywork.</span>
+            <span className="text-[#2e92fe]">Lose the admin.</span>
           </h1>
 
           <p className="text-xl mb-8 max-w-xl text-gray-700">
@@ -145,7 +145,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-5">
             <PrimaryButton onClick={scrollToWaitlist} className="w-full sm:w-auto">
-              Join the early access waitlist
+              Join the early access waiting list
             </PrimaryButton>
             <button
               onClick={() =>
@@ -343,20 +343,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WAITLIST */}
-      <section id="waitlist" className="max-w-4xl mx-auto px-6 mb-24">
+      {/* WAITING LIST */}
+      <section id="waiting-list" className="max-w-4xl mx-auto px-6 mb-24">
         <div className="bg-gradient-to-r from-[#2e92fe] to-[#1e70d9] rounded-3xl p-12 md:p-14 text-center text-white shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Want early access to AbleLearn?
           </h2>
           <p className="mb-8 text-white/90 max-w-xl mx-auto text-sm md:text-base">
             Join the early access list for updates, pilots and school trials as
-            we open the platform. No spam, just useful information.
+            we open the platform. No spam, just occasional useful updates.
           </p>
 
           {status === "success" && (
             <div className="mb-4 rounded-xl bg-white/10 border border-white/30 px-4 py-3 text-sm md:text-base">
-              🎉 You are on the AbleLearn waitlist. We will be in touch well
+              🎉 You are on the AbleLearn waiting list. We will be in touch well
               before we open pilots.
             </div>
           )}
@@ -391,7 +391,7 @@ export default function Home() {
               disabled={status === "loading"}
               className="w-full sm:w-auto mt-1 sm:mt-0"
             >
-              {status === "loading" ? "Adding..." : "Join waitlist"}
+              {status === "loading" ? "Adding..." : "Join waitng list"}
             </PrimaryButton>
           </form>
 
