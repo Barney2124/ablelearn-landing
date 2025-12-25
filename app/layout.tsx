@@ -2,6 +2,9 @@ export const metadata = {
   title: "AbleLearn | Smarter learning for schools",
   description:
     "AbleLearn helps teachers create high-quality learning materials in minutes and helps students revise what actually matters.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 import type { Metadata } from "next";
