@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "AbleLearn | Smarter learning for schools",
+  description:
+    "AbleLearn helps teachers create high-quality learning materials in minutes and helps students revise what actually matters.",
+};
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
